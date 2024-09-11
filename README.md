@@ -5,7 +5,7 @@
 ## Основные функции
 
 - [x]  **Исправленные депозиты**: Обновленный функционал для работы с депозитами в GMX v2 пулах.
-- Правильная передача кортеджа данных в контракт. Был изменен get_estimated_deposit_amount_out в файле gmx_utils.py
+- Правильная передача кортеджа данных в контракт. Был изменен get_estimated_deposit_amount_out в файле gmx_utils.py и create_order в файле deposit.py
   
 - [x]  **Исправленные выводы**: Улучшенная обработка операций вывода из GMX v2 пула.
 - Правильное формирование и отправка данных в контракт, есть проблема с передаваемым swapPricingType(uint8) в контракте https://arbiscan.io/address/0xa19fa3f0d8e7b7a8963420de504b624167e709b2 ф-ции _executeWithdrawal (0x08cfdf3d), передаваемое значение имеется в файле gmx_utils.py в функции get_estimated_withdrawal_amount_out.
