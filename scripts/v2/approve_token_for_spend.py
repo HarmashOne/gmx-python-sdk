@@ -107,7 +107,7 @@ def check_if_approved(
         tx_hash = connection.eth.send_raw_transaction(signed_txn.raw_transaction)
 
         print("Txn submitted!")
-        print("Check status: https://arbiscan.io/tx/{}".format(tx_hash.hex()))
+        print("Check status: https://arbiscan.io/tx/0x{}".format(tx_hash.hex()))
 
     if amount_approved < amount_of_tokens_to_spend and not approve:
         raise Exception("Token not approved for spend, please allow first!")
